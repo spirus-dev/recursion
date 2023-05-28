@@ -15,4 +15,5 @@ function fibsRec(n){
     return n>2 ? [...fibsRec(n-1),fibsRec(n-1)[n-2]+fibsRec(n-2)[n-3]] : (n===1 ? [0] : [0,1]);
 }
 
-console.log(fibsRec(8));
+console.log(`Iterative Fibonacci : ${fibs(8)}`);
+console.log(`Recursive Fibonacci : ${fibsRec(8)}`);
